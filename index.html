@@ -1,0 +1,46 @@
+<style type="text/css">/* Source: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+
+    .iframe-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .replay-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 20px;
+        }
+    }
+</style>
+
+<div class="replay-container">
+  <div class="replay-item">
+    <h4 class="replay-item__title">TITLE</h4>
+    <p class="replay-item__date">DATE OR SUBTITLE</p>
+    <div class="iframe-container"><iframe class="responsive-iframe" src="VIDEO URL" allowfulscreen></iframe></div>
+  </div>
+  <div class="replay-item">
+    <h4 class="replay-item__title">TITLE</h4>
+    <p class="replay-item__date">DATE OR SUBTITLE</p>
+    <div class="iframe-container"><iframe class="responsive-iframe" src="VIDEO URL" allowfulscreen></iframe></div>
+  </div>
+  <div class="replay-item">
+    <h4 class="replay-item__title">TITLE</h4>
+    <p class="replay-item__date">DATE OR SUBTITLE</p>
+    <div class="iframe-container"><iframe class="responsive-iframe" src="VIDEO URL" allowfulscreen></iframe></div>
+  </div>
+  ...
+</div>
